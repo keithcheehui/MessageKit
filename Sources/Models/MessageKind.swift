@@ -62,6 +62,11 @@ public enum MessageKind {
     ///   - MessagesDataSource: customCell(for message: MessageType, at indexPath: IndexPath, in messagesCollectionView: MessagesCollectionView) -> UICollectionViewCell
     ///   - MessagesLayoutDelegate: customCellSizeCalculator(for message: MessageType, at indexPath: IndexPath, in messagesCollectionView: MessagesCollectionView) -> CellSizeCalculator
     case custom(Any?)
+    
+    //MARK: - T360 Customization
+    case header(String?)
+    case closeChat(String?)
+    case timeStamp(String?)
 
     // MARK: - Not supported yet
 
