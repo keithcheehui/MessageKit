@@ -197,7 +197,7 @@ open class MessagesCollectionViewFlowLayout: UICollectionViewFlowLayout {
             return audioMessageSizeCalculator
         case .contact:
             return contactMessageSizeCalculator
-        case .custom:
+        case .custom, .header, .closeChat, .timeStamp:
             return messagesLayoutDelegate.customCellSizeCalculator(for: message, at: indexPath, in: messagesCollectionView)
         }
     }
